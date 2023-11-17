@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!--Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	 <!--GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+	 
+	<link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/reglas.css">
+	<link rel="stylesheet" href="css/footer.css">	
+	<link rel="stylesheet" href="css/newsletter.css">
+    <title>Gran Portonazo VI Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="Fondo">
+	  <!-- Navbar -->
+    
+      <div id="mainNavigation">
+        <div class="container">
+          
+        </div>
+      <nav role="navigation">
+        <div class="py-3 text-center border-bottom">
+          <img src="img/GP6-Logo-MQ.png" width="200" height="113" alt="" class="invert img-fluid" >
+        </div>
+      </nav>
+
+
+        <div class="navbar-expand-lg">
+
+        <div class="navbar-dark text-center my-2">
+          <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <span class="align-middle">Menú</span>
+          </button>
+        </div>
+
+        <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">La Historia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="ciudad.html">La Ciudad</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="mecanicas.html">Mecánicas</a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="loginv2.html" aria-current="page">Iniciar Sesión</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+	<!-- -->
+	  <div class="container">
+	  <h1 class="tituloCentradoBlanco"> ¡Participa por una copia de Gran Portonazo VI y otros premios! </h1>
+	  </div>
+	  
+	  
+	  <!-- Login -->
+    <div class="login-form-container">
+  <div class="background-image"></div>
+  <div class="form-bottom-links">
+    <p><a target="_BLANK" href="https://unsplash.com/photos/v7daTKlZzaw"></a><a target="_BLANK" href="https://unsplash.com/@danielleone"></a><a target="_BLANK" href="https://unsplash.com/"></a></p>
+  </div>  
+  <div class="login-form-wrapper">
+    <div class="login-form">
+      <form>
+        <div id="loginEmailPreview" class="login-email-preview">
+          <svg class="login-email-preview-svg-icon" viewBox="0 0 20 20">
+          <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+          </svg>
+          <span id="emailPreviewHTML" class="email-login-span"></span>
+        </div>
+
+        <div id="firstLoginSteps" class="first-login-steps">
+
+          <h3 class="sign-in">Iniciar sesión</h3>
+          <hr class="hr-sign-in-divide" />
+          <input id="emailInput" type="email" class="form-input-field email-input"  placeholder="Correo electrónico" />
+         
+          <button id="nextLoginPassword" class="button-custom full-width-button">Siguiente</button>
+        </div>
+        <div id="secondLoginSteps" class="second-login-step">
+          <h3 class="sign-in">Contraseña</h3>
+          <hr class="hr-sign-in-divide" />
+          <input placeholder="Password" id="passwordInput" class="form-input-field" type="password" />
+          
+          <button id="backLoginButton" class="button-custom half-width-button">Atrás</button>
+          <input class="button-custom half-width-button" type="submit" id="signIn" value="Aceptar" />
+        </div>
+        
+        <div id="finalLoginStep">
+          <div id ="successLogin" class="login-step-final-message">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="green" d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"></path>
+            </svg>
+            <p>Inicio de sesión correcto. Estás participando.</p> 
+          </div>    
+        </div>
+		  
+
+        
+        
+      </form>
+      
+
+
+      
+      
+    </div>
+  </div>
+  
+  <div id="emailError">Ingresa un email correcto</div>
+
+</div>
+	  
+	  <!-- Fin Login -->
+	  
+	   <!-- Contenido 1 -->
+		<div class="centrado">
+	  <img src="img/plataformas.png" alt="" height="" width="20%" class="img-fluid" >
+	  </div>
+	  <div class="container">
+	  <h1 class="tituloCentradoBlanco"> A la venta el 24/10/2024 </h1>
+	  </div>
+
+	  <!-- Fin Contenido 1 -->
+	  
+	  <!-- Contenido 3 -->
+	  <div class="centrado">
+	  <img src="img/esrb.jpg" alt="" height="" width="15%" class="img-fluid" >
+	  </div>
+	  <!-- -->
+	  
+	  <!-- Footer -->
+<footer>
+<div class="footer">
+
+
+	<div class="row">
+<ul>
+<li><a href="https://web.facebook.com/rockstargames"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://www.instagram.com/rockstargames/"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/@RockstarGames"><i class="fa-brands fa-youtube"></i></a></li>
+<li><a href="https://twitter.com/RockstarGames"><i class="fa-brands fa-x-twitter"></i></a></li>
+</ul>
+</div>
+	
+<div class="row">
+<ul>
+<li><a href="#">Contáctanos</a></li>
+<li><a href="#">Política de privacidad</a></li>
+<li><a href="#">Términos y condiciones</a></li>
+</ul>
+</div>
+
+	<!-- Newsletter -->
+	<div class="containerNewsletter">
+  <div class="content">
+    <form class="subscription">
+      <input class="add-email" type="email" placeholder="Ingresar correo electrónico">
+      <button class="submit-email" type="button">
+        <span class="before-submit">Subscribirse</span>
+        <span class="after-submit">¡Gracias por subscribirte!</span>
+       </button>
+    </form>
+  </div>
+</div>
+	<!-- Fin Newsletter -->
+	
+<div class="row">
+	<p>Take Juan Interactive © 2023 - Todos los derechos reservados</p>
+</div>
+	
+</div>
+</footer>
+  
+	  <!-- Fin Footer -->
+	  
+	<script src="js/newsletter.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

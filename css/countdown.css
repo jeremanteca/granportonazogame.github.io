@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* general styling */
+@font-face {
+  font-family: 'titulos'; 
+  src: url("../fonts/BebasNeue-Regular.woff");
+}
+
+@font-face {
+  font-family: 'data'; 
+  src: url("../fonts/BebasNeue-Book.otf");
+}
+
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.countdownTitle {
+  font-family: 'titulos';
+  text-align: center;
+  font-size: 4vw; /* Utilizando vw para el tamaño de fuente */
+  background: #FF00F7;
+  background: linear-gradient(to right, #FF00F7 0%, #E8D6FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -3%; /* Añadido un margen inferior */
+}
+
+.countdownData {
+	
+  font-family: 'data';
+}
+
+.countdownDate {
+	
+  font-family: 'data';
+}
+
+.containerCountdown {
+  color: #ffffff;
+  margin-bottom: 3%;
+  text-align: center;
+	 background: #FF00F7;
+  background: linear-gradient(to right, #FF00F7 0%, #E8D6FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5vw; /* Utilizando vw para el tamaño de fuente */
+}
+
+@media all and (max-width: 768px) {
+  .countdownTitle {
+    font-size: 6vw; /* Tamaño de fuente mayor para pantallas más pequeñas */
+  }
+
+  li {
+    font-size: 1em;
+    padding: 0.5em; /* Ajustes para pantallas más pequeñas */
+  }
+
+  li span {
+    font-size: 3.5vw; /* Utilizando vw para el tamaño de fuente */
+  }
+}
